@@ -111,9 +111,13 @@ print(variance)
 
 
 
+import os
+import os
 import pickle
-# Save the trained model to disk
-filename = 'linear_regression_model.pkl'
-with open(filename, 'wb') as file:
-    pickle.dump(regressor, file)
-print("Model has been pickled and saved as linear_regression_model.pkl")
+import streamlit as st
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "linear_regression_model.pkl")
+
+with open(MODEL_PATH, "rb") as file:
+    model = pickle.load(file)
