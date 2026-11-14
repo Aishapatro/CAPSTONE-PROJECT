@@ -1,0 +1,32 @@
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+myenv/
+mlflow_clean/
+mlflow_env/
+yolo_env/
+
+# MLflow tracking data
+mlruns/
+mlartifacts/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# Model files
+*.pt
+*.pth
+*.h5
+
+# Operating system
+.DS_Store
+Thumbs.db

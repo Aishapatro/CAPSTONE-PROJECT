@@ -1,0 +1,25 @@
+
+# Python environments
+mlflow_clean/
+mlflow_env/
+myenv/
+yolo_env/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# Large YOLO model
+yolov8n.pt
